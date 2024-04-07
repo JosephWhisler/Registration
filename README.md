@@ -1,0 +1,1 @@
+This is a project meant to help me understand how to create a form using html and css, with a little bit of provided javascript. 

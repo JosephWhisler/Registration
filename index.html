@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Test for Forms</h2>
+    <div class="contactinfo">
+        <form action="thankyou.html">
+            <fieldset>
+                <legend>
+                    Contact Information
+                </legend>
+                <label for="fname">
+                    Name:
+                    <input autofocus type="text" name="fname" id="fname" required placeholder="First Name" />
+                </label>
+                <label for="lname">
+                    Last Name:
+                    <input type="text" name="lname" id="lname" required placeholder="Last Name" />
+                </label>
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" id="email" required placeholder="Email" />
+                </label>
+            </fieldset>
+
+            <div class="reservation">
+                <fieldset>
+                    <legend>
+                        Reservation Request
+                    </legend>
+                    <select id="instructor" name="instructor">
+                        <option value="tiffany">Tiffany Ford</option>
+                        <option value="kirsten">Kirsten Markley</option>
+                        <option value="jackson">Jackson Lewis</option>
+                    </select>
+
+                    <select id="months" name="months">
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                    <input type="number" id="quantity" name="quantity" min="1" max="31">
+                    <input type="radio" id="radio" name="radio" value="radio">
+                    <label for="radio">AM</label>
+                    <input type="radio" id="radio" name="radio" value="radio">
+                    <label for="radio">PM</label>
+                </fieldset>
+            </div>
+
+            <br>
+            <input class="submit" type="submit" value="submit" />
+        </form>
+    </div>
+
+</body>
+
+</html>
