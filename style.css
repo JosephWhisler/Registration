@@ -1,12 +1,54 @@
-h2 {
-    text-align: center;
+body {
+    background-image: url('academia.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
     
 }
 
+
+
+.container {
+    
+    width: 41%;
+    background-color: rgb(176 170 126);
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: rgb(166, 177, 185);  
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(109 79 71);
+  
+}
+
+h2 {
+    color: aliceblue;
+    text-align: center;
+
+}
+
+
 legend {
-    color: rgb(54, 54, 134);
+    font-weight: bold;
+    color: rgb(14, 13, 13);
+}
+
+
+.submit:hover {
+background-color: rgb(88 68 70);
 }
 
 .submit {
-    
+    align-items: center;
 }

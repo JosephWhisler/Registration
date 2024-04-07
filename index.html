@@ -5,30 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Advising</title>
 </head>
 
+<h2>Advising Form</h2>
+
 <body>
-    <h2>Test for Forms</h2>
-    <div class="contactinfo">
-        <form action="thankyou.html">
+   
+<div class="container">
+    <form action="thankyou.html">
+        <div class="contactinfo">
             <fieldset>
                 <legend>
                     Contact Information
                 </legend>
                 <label for="fname">
                     Name:
-                    <input autofocus type="text" name="fname" id="fname" required placeholder="First Name" />
+                    <input autofocus type="text" name="fname" id="fname" required placeholder="First Name">
                 </label>
                 <label for="lname">
                     Last Name:
-                    <input type="text" name="lname" id="lname" required placeholder="Last Name" />
+                    <input type="text" name="lname" id="lname" required placeholder="Last Name">
                 </label>
                 <label for="email">
                     Email:
-                    <input type="email" name="email" id="email" required placeholder="Email" />
+                    <input type="email" name="email" id="email" required placeholder="Email">
                 </label>
             </fieldset>
+        </div>
+       
 
             <div class="reservation">
                 <fieldset>
@@ -56,10 +61,10 @@
                         <option value="december">December</option>
                     </select>
                     <input type="number" id="quantity" name="quantity" min="1" max="31">
-                    <input type="radio" name="radio" value="radio">
-                    <label for="radio">AM</label>
-                    <input type="radio" name="radio" value="radio">
-                    <label for="radio">PM</label>
+                    <input type="radio" id="am" name="time" value="AM">
+                    <label for="am">AM</label>
+                    <input type="radio" id="pm" name="time" value="PM">
+                    <label for="pm">PM</label>
                 </fieldset>
             </div>
             <div class="classes">
@@ -67,11 +72,11 @@
                     <legend>
                         Classes You Wish to Take Next Semester
                     </legend>
-                    <label><input type="radio" name="class1" value="Math"> SPN-101</label>
-                    <label><input type="radio" name="class2" value="Science"> MTH-130</label>
-                    <label><input type="radio" name="class3" value="History"> CIS-201</label>
-                    <label><input type="radio" name="class4" value="English"> CIS-135</label>
-                    <label><input type="radio" name="class5" value="Art"> CIS-150</label>
+                    <label><input type="radio" name="class1" value="SPN-101"> SPN-101</label>
+                    <label><input type="radio" name="class2" value="MTH-130"> MTH-130</label>
+                    <label><input type="radio" name="class3" value="CIS-201"> CIS-201</label>
+                    <label><input type="radio" name="class4" value="CIS-135"> CIS-135</label>
+                    <label><input type="radio" name="class5" value="CIS-150"> CIS-150</label>
                 </fieldset>
             </div>
             <div class="additional">
@@ -79,13 +84,11 @@
                     <legend>
                         Additional Information
                     </legend>
-<textarea name="message" rows="10" cols="80">
-
-</textarea>
+                    <textarea name="message" rows="10" cols="30"></textarea>
                 </fieldset>
             </div>
             <br>
-            <input class="submit" type="submit" value="submit" />
+            <input class="submit" type="submit" value="submit">
         </form>
     </div>
 
